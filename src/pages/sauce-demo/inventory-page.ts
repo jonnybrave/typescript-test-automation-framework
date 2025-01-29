@@ -4,6 +4,7 @@ export class InventoryPage extends BasePage {
   private backpackAddToCartButton = this.by.id("add-to-cart-sauce-labs-backpack");
   private bikeLightAddToCartButton = this.by.id("add-to-cart-sauce-labs-bike-light");
   private onesieAddToCartButton = this.by.id("add-to-cart-sauce-labs-onesie");
+  private T_ShirtAddToCartButton = this.by.id("add-to-cart-sauce-labs-bolt-t-shirt");
   private shopingCartButton = this.by.xpath("//a[@data-test='shopping-cart-link']");
 
   public async clickBackpackAddToCart() {
@@ -16,6 +17,10 @@ export class InventoryPage extends BasePage {
 
   public async clickOnesieAddToCart() {
     await this.onesieAddToCartButton.click();
+  }
+
+  public async clickT_ShirtAddToCartButton() {
+    await this.T_ShirtAddToCartButton.click();
   }
 
   public async clickShopingCart() {

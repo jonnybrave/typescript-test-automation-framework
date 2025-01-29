@@ -13,7 +13,7 @@
   "license": "ISC",
   "description": "This project is designed for automating tests on the **UI Playground**. It uses **Playwright** for UI interactions, **TypeScript** for strict typing, and **TSLint** for code quality assurance.",
   "devDependencies": {
-    "@playwright/test": "^1.48.2",
+    "@playwright/test": "^1.50.0",
     "@types/node": "^22.9.0",
     "eslint-config-prettier": "^9.1.0",
     "eslint-plugin-prettier": "^5.2.1",
