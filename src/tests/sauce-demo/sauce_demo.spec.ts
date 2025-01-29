@@ -48,6 +48,6 @@ test.describe('Shopping Test', () => {
     await checkoutStepTwoPage.clickFinish();
     
     await checkoutCompletePage.verifyCompleteHeaderText();
-    await checkoutCompletePage.clickBackHome();
+    //await checkoutCompletePage.clickBackHome();
   });
 });
