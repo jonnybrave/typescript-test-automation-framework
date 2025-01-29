@@ -6,6 +6,8 @@ export class InventoryPage extends BasePage {
   private onesieAddToCartButton = this.by.id("add-to-cart-sauce-labs-onesie");
   private T_ShirtAddToCartButton = this.by.id("add-to-cart-sauce-labs-bolt-t-shirt");
   private shopingCartButton = this.by.xpath("//a[@data-test='shopping-cart-link']");
+  private menuTopLeft = this.by.id("react-burger-menu-btn");
+  private LogoutButton = this.by.id("logout_sidebar_link");
 
   public async clickBackpackAddToCart() {
     await this.backpackAddToCartButton.click();
@@ -25,5 +27,13 @@ export class InventoryPage extends BasePage {
 
   public async clickShopingCart() {
     await this.shopingCartButton.click();
+  }
+
+  public async clickMenutTopLeft(){
+    await this.menuTopLeft.click();
+  }
+
+  public async clickLogoutButton(){
+    await this.LogoutButton.click();
   }
 }
